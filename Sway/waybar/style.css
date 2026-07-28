@@ -1,0 +1,142 @@
+
+/* Esta propiedad define las Fuentes Tipograficas que usara Waybar */
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px;
+}
+
+/* Esta propiedad modifica la Waybar en General */
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.5);
+    color: #ffffff;
+}
+
+/*Esta propiedad modifica los Botones en General */
+button {
+    background: inherit;
+    box-shadow: inset 0 -3px #ff0022;
+    border-radius: 0;
+}
+
+/* Esta propiedad modifica los Botones en General cuando esta el Cursor por encima */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ff0022;
+    border-radius: 0;
+}
+
+/* Esta propiedad modifica los Botones del Workspace */
+
+#workspaces button {
+    padding: 0 2px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Esta propiedad modifica los Botones del Workspace cuando esta el Cursor encima */
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Esta propiedad modifica el Boton del Workspace Seleccionado */
+#workspaces button.focused, #workspaces button.active {
+    background-color: transparent;
+    box-shadow: inset 0 -3px #ff0022;
+}
+
+/* Esta Propiedad modifica el Modulo de Modo */
+#mode {
+    background-color: transparent;
+    box-shadow: inset 0 -3px #ffffff;
+    border-radius: 0;
+}
+
+
+/* Esto agrupa diferentes modulos para darle las mismas Propiedades */
+#clock,#battery,#cpu,#memory,#disk,#temperature,#backlight,#network,
+#pulseaudio,#wireplumber,#tray,#mode {
+    background-color: transparent;
+    padding: 0 5px;
+    color: #ffffff;
+}
+
+#window,#workspaces {
+    margin: 0 5px;
+}
+
+/* Le quita el Margen Izquierdo al Primer Modulo que es Workspaces */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* Le quita el Margen Derecho al Ultimo Modulo que sigue siendo Workspaces */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+/* Propiedades del Modulo del Reloj */
+#clock {
+
+}
+
+/* Propiedades del Modulo de la Bateria */
+#battery {
+    background: inherit;
+    box-shadow: inset 0 -3px #9d00ff;
+}
+
+/* Propiedades del Modulo de la CPU */
+#cpu {
+    background: inherit;
+    box-shadow: inset 0 -3px #00ff40;
+}
+
+/* Propiedades del Modulo de la Memoria */
+#memory {
+    background: inherit;
+    box-shadow: inset 0 -3px #00ffff;
+}
+
+/* Propiedades del Modulo del Brillo */
+#backlight {
+    background: inherit;
+    box-shadow: inset 0 -3px #7bff00;
+}
+
+/* Propiedades del Modulo del Internet */
+#network {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffe605;
+}
+
+/* Propiedades del Modulo de PulseAudio */
+#pulseaudio {
+    background: inherit;
+    box-shadow: inset 0 -3px #ff8c00;
+}
+
+/* Propiedades de un Modulo relacionado con el Sonido */
+#wireplumber {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* Propiedades del Modulo de la Temperatura del PC */
+#temperature {
+    background: inherit;
+    box-shadow: inset 0 -3px #000fff;
+}
+
+/* Propiedades del Modulo de la Bandeja de Applicaciones */
+#tray {
+    background: inherit;
+    box-shadow: inset 0 -3px #ff05c9;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: inherit;
+    box-shadow: inset 0 -3px #ff05c9;
+}
