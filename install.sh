@@ -1,5 +1,5 @@
 #!/bin/bash
-cat .ascii_art.txt
+cat ascii_art.txt
 
 #==COPIA-DE-DOTFILES==#
 cp -r config/foot/ ~/.config
