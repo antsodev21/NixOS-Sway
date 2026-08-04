@@ -16,3 +16,6 @@ sudo cp configuration.nix /etc/nixos/configuration.nix
 
 #==APLICA-LA-CONFIGURACION==#
 sudo nixos-rebuild switch
+
+#==INSTALA-OHMYBASH==#
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
