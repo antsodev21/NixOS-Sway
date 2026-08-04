@@ -157,15 +157,18 @@
 
   # Configuracion del Tamaño de los Bordes
   default_border pixel 3
-  default_floating_border pixel 3
+  default_floating_border pixel 4
 
   # Configuracion del Color del Borde
-  client.focused #ff0055 #ff0055 #000000 #ffe600 #ff0055
+  client.focused #ff0055 #ff0055 #000000 #ff5342 #ff0055
   client.focused_inactive #32303f #1a1921 #7a778a #1a1921 #32303f
   client.unfocused #1a1921 #1a1921 #7a778a #1a1921 #1a1921
 
+  # Efecto Blur de las Ventanas
+  blur enable
+
   # Activa la Transparencia de las Ventanas
-  for_window [class=".*"] opacity 0.59
-  for_window [app_id=".*"] opacity 0.70
+  for_window [class=".*"] opacity 0.80
+  for_window [app_id=".*"] opacity 0.80
 
 include /etc/sway/config.d/*
