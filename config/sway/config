@@ -29,7 +29,7 @@
 
 #==CONFIGURACION-DE-LAS-SALIDAS==#
   # Establece el Wallpaper
-  output * bg /home/antsoftware21/Imágenes/Wallpapers/Niko-OneShot.png fill
+  output * bg /home/antsoftware21/Pictures/Wallpapers/Niko-OneShot.png fill
 
   # Ejecuta el Bloqueo y la Suspension
   exec swayidle -w \
@@ -136,7 +136,7 @@
   bindsym XF86PowerOff exec $powermenu
 
   # Tecala para tomar una Captura de Pantalla
-  bindsym Print exec mkdir -p ~/Imágenes/Capturas\ de\ pantalla/ && grim ~/Imágenes/Capturas\ de\ pantalla/$(date +%Y-%m-%d_%H-%m-%s).png
+  bindsym Print exec mkdir -p ~/Pictures/Capturas\ de\ pantalla/ && grim ~/Pictures/Capturas\ de\ pantalla/$(date +%Y-%m-%d_%H-%m-%s).png
 
   # Inicia el Selector de Perfiles de Potencia
   bindsym $mod+p exec --no-startup-id ~/.config/rofi/script/power-profiles.sh
